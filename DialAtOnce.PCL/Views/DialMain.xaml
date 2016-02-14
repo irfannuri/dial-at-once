@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Xamarin3United.PCL.DialMain" xmlns:local="clr-namespace:Xamarin3United.PCL; assembly=Xamarin3United.PCL">
+	<TabbedPage.Children>
+		<ContentPage Title="Search" Padding="0,20,0,0" Icon="business_contact">
+			<ContentPage.Content>
+				<StackLayout Orientation="Vertical" Spacing="0">
+					<StackLayout x:Name="stack" BackgroundColor="#78b9b5" Padding="5,5,5,5">
+						<!--<local:DialSearchEntry Text="Deneme"></local:DialSearchEntry>
+	    	    	<Entry x:Name="searchBar" Keyboard="Telephone" Placeholder="Tap the DialPad!" BackgroundColor="Color.White" TextColor="#494c53"></Entry>-->
+					</StackLayout>
+					<StackLayout BackgroundColor="#cfd2d6" Padding="5,5,5,5" VerticalOptions="LayoutOptions.FillAndExpand">
+						<ListView x:Name="resultList">
+						</ListView>
+					</StackLayout>
+				</StackLayout>
+			</ContentPage.Content>
+		</ContentPage>
+
+		<ContentPage Title="Settings" Padding="0,20,0,0" Icon="settings">
+			<ContentPage.Content>
+			<StackLayout Orientation="Vertical" Spacing="0">
+				<Button Text="Deneme"></Button>
+			</StackLayout>
+			</ContentPage.Content>
+		</ContentPage>
+
+	</TabbedPage.Children>
+</TabbedPage>
